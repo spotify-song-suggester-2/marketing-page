@@ -1,11 +1,13 @@
 header{
- //background-color: darkgrey;
+  //background-color: darkgrey;
   width: 100%;
+  background: linear-gradient(0deg, rgba(128,128,128,0.7) 0%, rgba(0,0,0,0.7) 100%), url(../img/AdobeStock_188698373\ 2.png) center;
+  // background-repeat: no-repeat;
   .title{
     margin-left: 10%;
-    margin-top: 50px;
+    padding-top: 50px;
     h1{
-      .text(@logo-font, @plush-pink, 7.2rem);
+      .headerText(@logo-font, @plush-pink, 7.2rem);
       font-style: normal;
       font-weight: normal;
       font-size: 72px;
@@ -16,27 +18,23 @@ header{
   .slogan{
     .headerContainer();
     h2{
-      .text(@header-font, @white, 2rem);
+      .headerText(@header-font, @white, 2rem);
     }
   }
   .lower{
     .headerContainer();
     h3{
-      .text(@header-font, @white, 1.5rem);
+      .headerText(@header-font, @white, 1.5rem);
     }
   }
-  button{
-    background: radial-gradient(140.21% 237.58% at 78.43% 139.84%, rgba(239, 1, 159, 0.75) 0%, rgba(239, 1, 159, 0) 100%);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  .button-container{
+    width: 100%;
     display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 3.6px;
-    text-transform: uppercase;
-    padding: 20px;
-    margin-bottom: 50px;
-    border-radius: 20px;
-    color: rgba(255, 255, 255, 0.9);
+    justify-content: flex-end;
+    button{
+      .buttonStyle(30px 40px, 50px, 1.3rem);
+      margin-right: 10%;
+    }
   }
 }
 
