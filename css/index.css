@@ -134,12 +134,20 @@ table {
   font-display: swap;
   src: local('Abril Fatface'), local('AbrilFatface-Regular'), url(https://fonts.gstatic.com/s/abrilfatface/v11/zOL64pLDlL1D99S8g8PtiKchq-dmiA.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/muli/v19/7Aulp_0qiz-aVz7u3PJLcUMYOFnOkEk30e0.ttf) format('truetype');
+}
 header {
   width: 100%;
+  background: linear-gradient(0deg, rgba(128, 128, 128, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url(../img/AdobeStock_188698373\ 2.png) center;
 }
 header .title {
   margin-left: 10%;
-  margin-top: 50px;
+  padding-top: 50px;
 }
 header .title h1 {
   font-family: cortado, sans-serif;
@@ -175,42 +183,124 @@ header .lower h3 {
   color: #FFFFFF;
   font-size: 1.5rem;
 }
-header button {
-  background: radial-gradient(140.21% 237.58% at 78.43% 139.84%, rgba(239, 1, 159, 0.75) 0%, rgba(239, 1, 159, 0) 100%);
+header .button-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+header .button-container button {
+  background: #ef019f;
+  background: linear-gradient(90deg, rgba(239, 1, 159, 0.5) 0%, rgba(253, 29, 222, 0.5) 100%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: rgba(255, 255, 255, 0.9);
+  border-radius: 100px;
+  border: none;
   display: flex;
   align-items: center;
   text-align: center;
+  padding: 30px 40px;
+  margin-bottom: 50px;
+  font-size: 1.3rem;
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 900;
   letter-spacing: 3.6px;
   text-transform: uppercase;
-  padding: 20px;
-  margin-bottom: 50px;
-  border-radius: 20px;
-  color: rgba(255, 255, 255, 0.9);
+  margin-right: 10%;
 }
-.middle-box {
-  border: 4px solid #FFFFFF;
-  width: 404px;
-  height: 339px;
-  left: 100px;
-  top: 957px;
+header .button-container button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
-h4 {
-  color: #FFFFFF;
-}
-p {
-  color: #FFFFFF;
-}
-.left {
+nav {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  background-color: #EF019F;
 }
-.right {
+nav .links {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+  width: 30%;
 }
-#middle {
+nav .links a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1.3rem;
+  font-family: 'Muli', sans-serif;
+}
+nav .links a:hover {
+  transform: scale(1.1);
+}
+section {
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   background-color: #171330;
+}
+section .top,
+section .bottom {
+  margin: 10px;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+}
+section .container {
+  border: 4px solid #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  height: 400px;
+}
+section .container p {
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  text-align: center;
+  font-family: 'Muli', sans-serif;
+  padding: 5%;
+}
+section .container h4 {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  line-height: none;
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;
+  padding: 10%;
+}
+section .container img {
+  width: 30%;
+}
+.bottom-button {
+  background-color: #171330;
+}
+.bottom-button button {
+  background: #ef019f;
+  background: linear-gradient(90deg, rgba(239, 1, 159, 0.5) 0%, rgba(253, 29, 222, 0.5) 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: rgba(255, 255, 255, 0.9);
+  border-radius: 100px;
+  border: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 15px 25px;
+  margin-bottom: 35px;
+  font-size: 1rem;
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+.bottom-button button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+footer {
+  display: flex;
+  background-color: #171330;
 }
