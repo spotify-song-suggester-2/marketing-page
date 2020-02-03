@@ -235,16 +235,22 @@ nav .links a:hover {
 }
 section {
   padding: 80px 0;
+  background-color: #171330;
+  display: flex;
+  justify-content: center;
+}
+section .body-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: #171330;
+  width: 60%;
 }
 section .top,
 section .bottom {
-  margin: 10px;
+  margin: 1% 0;
   display: flex;
   justify-content: center;
+  justify-content: space-between;
 }
 section .container {
   border: 4px solid #FFFFFF;
@@ -252,7 +258,7 @@ section .container {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 30%;
+  width: 48%;
   height: 400px;
 }
 section .container p {
@@ -274,10 +280,13 @@ section .container h4 {
 section .container img {
   width: 30%;
 }
-.bottom-button {
+section .bottom-button {
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
   background-color: #171330;
 }
-.bottom-button button {
+section .bottom-button button {
   background: #ef019f;
   background: linear-gradient(90deg, rgba(239, 1, 159, 0.5) 0%, rgba(253, 29, 222, 0.5) 100%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -296,11 +305,30 @@ section .container img {
   letter-spacing: 3.6px;
   text-transform: uppercase;
 }
-.bottom-button button:hover {
+section .bottom-button button:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
 footer {
   display: flex;
+  justify-content: center;
   background-color: #171330;
+  padding-bottom: 50px;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 20%;
+}
+footer .footer-container .copy {
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+}
+footer .footer-container .social-media i {
+  color: #EF019F;
+  font-size: 1.6rem;
+  margin: 0 10px;
 }
