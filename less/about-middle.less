@@ -1,0 +1,20 @@
+.profile{
+    width: 50%;
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+}
+.aboutContainer{
+    border: 4px solid #FFFFFF;
+    .displayFlex(center, center);
+    flex-direction: column;
+    width: 48%;
+    height: 450px;
+}
+p{
+    .bodyText(1.2rem, 1.8rem, @body-font, 5%);
+}
+h3{
+    .bodyText(1.5rem, none, @header-font, 10%);
+}

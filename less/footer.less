@@ -1,18 +1,14 @@
 footer{
-    display: flex;
-    justify-content: center;
+    .displayFlex(center, flex-start);
     background-color: @cool-blue;
     padding-bottom: 50px;
     .footer-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        .displayFlex(center, center);
         justify-content: space-between;
         width: 20%;
         .copy{
             color: @white;
-            display: flex;
-            justify-content: center;
+            .displayFlex(center, flex-start);
         }
         .social-media{
             i{
@@ -22,8 +18,4 @@ footer{
             }
         }
     }
-    // p{
-    //     color: @white;
-    //     font-family: @body-font;
-    // }
 }

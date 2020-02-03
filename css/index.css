@@ -159,6 +159,11 @@ header .title h1 {
   line-height: 90px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+@media (max-width: 500px) {
+  header .title {
+    text-align: center;
+  }
+}
 header .slogan {
   padding: 10px 0;
   padding-left: 10%;
@@ -170,6 +175,16 @@ header .slogan h2 {
   font-family: 'Abril Fatface', cursive;
   color: #FFFFFF;
   font-size: 2rem;
+}
+@media (max-width: 500px) {
+  header .slogan {
+    width: 70%;
+  }
+}
+@media (max-width: 800px) {
+  header .slogan {
+    width: 35%;
+  }
 }
 header .lower {
   padding: 10px 0;
@@ -183,10 +198,21 @@ header .lower h3 {
   color: #FFFFFF;
   font-size: 1.5rem;
 }
+@media (max-width: 500px) {
+  header .lower {
+    width: 70%;
+  }
+}
+@media (max-width: 800px) {
+  header .lower {
+    width: 35%;
+  }
+}
 header .button-container {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  align-items: flex-start;
 }
 header .button-container button {
   background: #ef019f;
@@ -212,6 +238,17 @@ header .button-container button:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
+@media (max-width: 500px) {
+  header .button-container button {
+    margin-right: 0;
+  }
+}
+@media (max-width: 500px) {
+  header .button-container {
+    justify-content: center;
+    align-items: center;
+  }
+}
 nav {
   display: flex;
   justify-content: center;
@@ -222,7 +259,7 @@ nav .links {
   display: flex;
   justify-content: center;
   justify-content: space-between;
-  width: 30%;
+  width: 33%;
 }
 nav .links a {
   text-decoration: none;
@@ -233,15 +270,27 @@ nav .links a {
 nav .links a:hover {
   transform: scale(1.1);
 }
+@media (max-width: 1200px) {
+  nav .links {
+    width: 40%;
+  }
+}
+@media (max-width: 1000px) {
+  nav .links {
+    width: 45%;
+  }
+}
 section {
   padding: 80px 0;
   background-color: #171330;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
 }
 section .body-container {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   flex-direction: column;
   width: 60%;
 }
@@ -250,6 +299,7 @@ section .bottom {
   margin: 1% 0;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 section .container {
@@ -280,10 +330,15 @@ section .container h4 {
 section .container img {
   width: 30%;
 }
+section .container:hover {
+  transform: scale(1.05);
+}
 section .bottom-button {
   margin: 50px 0;
+  width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #171330;
 }
 section .bottom-button button {
@@ -312,6 +367,7 @@ section .bottom-button button:hover {
 footer {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   background-color: #171330;
   padding-bottom: 50px;
 }
@@ -326,9 +382,42 @@ footer .footer-container .copy {
   color: #FFFFFF;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
 }
 footer .footer-container .social-media i {
   color: #EF019F;
   font-size: 1.6rem;
   margin: 0 10px;
+}
+.profile {
+  width: 50%;
+}
+.profile:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.aboutContainer {
+  border: 4px solid #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 48%;
+  height: 450px;
+}
+p {
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  text-align: center;
+  font-family: 'Muli', sans-serif;
+  padding: 5%;
+}
+h3 {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  line-height: none;
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;
+  padding: 10%;
 }
