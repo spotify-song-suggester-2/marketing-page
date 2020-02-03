@@ -7,7 +7,7 @@ nav{
         display: flex;
         justify-content: center;
         justify-content: space-between;
-        width: 30%;
+        width: 33%;
         a{
             text-decoration: none;
             color: @white;
@@ -16,6 +16,12 @@ nav{
             &:hover{
                 transform: scale(1.1);
             }
+        }
+        @media @md-desktop{
+            width: 40%;
+        }
+        @media @sm-desktop{
+            width: 45%;
         }
     }
 }
