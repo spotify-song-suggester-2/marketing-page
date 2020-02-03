@@ -1,15 +1,42 @@
-<!doctype html>
+header{
+ //background-color: darkgrey;
+  width: 100%;
+  .title{
+    margin-left: 10%;
+    margin-top: 50px;
+    h1{
+      .text(@logo-font, @plush-pink, 7.2rem);
+      font-style: normal;
+      font-weight: normal;
+      font-size: 72px;
+      line-height: 90px;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+  .slogan{
+    .headerContainer();
+    h2{
+      .text(@header-font, @white, 2rem);
+    }
+  }
+  .lower{
+    .headerContainer();
+    h3{
+      .text(@header-font, @white, 1.5rem);
+    }
+  }
+  button{
+    background: radial-gradient(140.21% 237.58% at 78.43% 139.84%, rgba(239, 1, 159, 0.75) 0%, rgba(239, 1, 159, 0) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+    padding: 20px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
 
-<html lang="en">
-<head>
-  <title>The HTML5 Herald</title>
-  <link rel="stylesheet" href="css/index.css">
-</head>
-
-<body>
-<header></header>
-<nav></nav>
-<middle></middle>
-<footer></footer>
-</body>
-</html>
