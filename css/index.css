@@ -162,6 +162,7 @@ header .title h1 {
 @media (max-width: 500px) {
   header .title {
     text-align: center;
+    margin-left: 0;
   }
 }
 header .slogan {
@@ -261,7 +262,7 @@ nav .links {
   display: flex;
   justify-content: center;
   justify-content: space-between;
-  width: 33%;
+  width: 35%;
 }
 nav .links a {
   text-decoration: none;
@@ -274,17 +275,17 @@ nav .links a:hover {
 }
 @media (max-width: 1200px) {
   nav .links {
-    width: 40%;
+    width: 50%;
   }
 }
 @media (max-width: 1000px) {
   nav .links {
-    width: 45%;
+    width: 65%;
   }
 }
 @media (max-width: 800px) {
   nav .links {
-    width: 80%;
+    width: 90%;
   }
 }
 @media (max-width: 500px) {
@@ -477,6 +478,15 @@ footer .footer-container .social-media i {
   width: 48%;
   height: 450px;
 }
+.aboutTop,
+.aboutBottom,
+.aboutMiddle {
+  margin: 1% 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-between;
+}
 p {
   color: #FFFFFF;
   font-size: 1.2rem;
@@ -492,4 +502,55 @@ h3 {
   text-align: center;
   font-family: 'Abril Fatface', cursive;
   padding: 10%;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #171330;
+  height: 80vh;
+}
+.form-container form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+.form-container form label {
+  font-family: 'Muli', sans-serif;
+  font-size: 1.2rem;
+  margin: 30px 0;
+  color: #FFFFFF;
+}
+.form-container form input {
+  width: 50%;
+  height: 30px;
+}
+.form-container form textarea {
+  width: 50%;
+}
+.form-container form button {
+  margin: 30px 0;
+  background: #ef019f;
+  background: linear-gradient(90deg, rgba(239, 1, 159, 0.5) 0%, rgba(253, 29, 222, 0.5) 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: rgba(255, 255, 255, 0.9);
+  border-radius: 100px;
+  border: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 30px 40px;
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  font-family: 'Muli', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+.form-container form button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
