@@ -3,6 +3,17 @@ nav{
     justify-content: center;
     padding: 40px;
     background-color: @plush-pink;
+    a{
+        text-decoration: none;
+        // i.fas{
+        //     color: white;
+        //     font-size: 1.5rem;
+        //     display: none;
+        //     @media @tablet{
+        //         display: block;
+        //     }
+        // }
+    }
     .links{
         display: flex;
         justify-content: center;
@@ -23,11 +34,18 @@ nav{
         @media @sm-desktop{
             width: 65%;
         }
-        @media @tablet{
-            width: 90%;
-        }
-        @media @phone{
-            width: 100%;
-        }
+    }
+    @media @tablet{
+        display: none;
+    }
+}
+
+.mobile{
+    display: none;
+    @media @tablet{
+        display: flex;
+    }
+    .links{
+        display: none;
     }
 }
