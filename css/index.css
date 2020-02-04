@@ -265,7 +265,7 @@ nav .links {
   display: flex;
   justify-content: center;
   justify-content: space-between;
-  width: 35%;
+  width: 40%;
 }
 nav .links a {
   text-decoration: none;
@@ -278,7 +278,7 @@ nav .links a:hover {
 }
 @media (max-width: 1200px) {
   nav .links {
-    width: 50%;
+    width: 60%;
   }
 }
 @media (max-width: 1000px) {
@@ -297,10 +297,23 @@ nav .links a:hover {
 @media (max-width: 800px) {
   .mobile {
     display: flex;
+    flex-direction: column;
   }
 }
 .mobile .links {
   display: none;
+  flex-direction: column;
+}
+.mobile a {
+  color: #FFFFFF;
+  text-decoration: none;
+  margin: 10px 0;
+}
+.mobile a i {
+  font-size: 1.3rem;
+}
+.mobile a:hover {
+  transform: none !important;
 }
 section {
   padding: 80px 0;
@@ -546,11 +559,11 @@ h3 {
   color: #FFFFFF;
 }
 .form-container form input {
-  width: 50%;
+  width: 80%;
   height: 30px;
 }
 .form-container form textarea {
-  width: 50%;
+  width: 80%;
 }
 .form-container form button {
   margin: 30px 0;
@@ -575,4 +588,14 @@ h3 {
 .form-container form button:hover {
   cursor: pointer;
   transform: scale(1.1);
+}
+@media (max-width: 800px) {
+  .form-container form {
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .form-container form {
+    width: 90%;
+  }
 }

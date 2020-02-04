@@ -5,20 +5,12 @@ nav{
     background-color: @plush-pink;
     a{
         text-decoration: none;
-        // i.fas{
-        //     color: white;
-        //     font-size: 1.5rem;
-        //     display: none;
-        //     @media @tablet{
-        //         display: block;
-        //     }
-        // }
     }
     .links{
         display: flex;
         justify-content: center;
         justify-content: space-between;
-        width: 35%;
+        width: 40%;
         a{
             text-decoration: none;
             color: @white;
@@ -29,7 +21,7 @@ nav{
             }
         }
         @media @md-desktop{
-            width: 50%;
+            width: 60%;
         }
         @media @sm-desktop{
             width: 65%;
@@ -44,8 +36,21 @@ nav{
     display: none;
     @media @tablet{
         display: flex;
+        flex-direction: column;
     }
     .links{
         display: none;
+        flex-direction: column;
+    }
+    a{
+        color: @white;
+        text-decoration: none;
+        margin: 10px 0;
+        i{
+            font-size: 1.3rem;
+        }
+        &:hover{
+            transform: none !important;
+        }
     }
 }
