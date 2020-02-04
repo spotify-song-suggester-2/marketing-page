@@ -12,7 +12,20 @@
     flex-direction: column;
     width: 48%;
     height: 450px;
+    @media @phone{
+        width: 60%;
+        margin-left: 20%;
+    }
 }
+.aboutTop, .aboutBottom, .aboutMiddle{
+    margin: 1% 0;
+    .displayFlex(center, flex-start);
+    justify-content: space-between;
+    @media @phone{
+        flex-direction: column;
+    }
+}
+
 p{
     .bodyText(1.2rem, 1.8rem, @body-font, 5%);
 }

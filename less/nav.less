@@ -3,11 +3,22 @@ nav{
     justify-content: center;
     padding: 40px;
     background-color: @plush-pink;
+    a{
+        text-decoration: none;
+        // i.fas{
+        //     color: white;
+        //     font-size: 1.5rem;
+        //     display: none;
+        //     @media @tablet{
+        //         display: block;
+        //     }
+        // }
+    }
     .links{
         display: flex;
         justify-content: center;
         justify-content: space-between;
-        width: 33%;
+        width: 35%;
         a{
             text-decoration: none;
             color: @white;
@@ -18,16 +29,23 @@ nav{
             }
         }
         @media @md-desktop{
-            width: 40%;
+            width: 50%;
         }
         @media @sm-desktop{
-            width: 45%;
+            width: 65%;
         }
-        @media @tablet{
-            width: 80%;
-        }
-        @media @phone{
-            width: 100%;
-        }
+    }
+    @media @tablet{
+        display: none;
+    }
+}
+
+.mobile{
+    display: none;
+    @media @tablet{
+        display: flex;
+    }
+    .links{
+        display: none;
     }
 }
