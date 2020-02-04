@@ -6,11 +6,21 @@ section{
         .displayFlex(center, flex-start);
         flex-direction: column;
         width: 60%;
+        @media @md-desktop{
+            width: 70%;
+        }
+        @media @sm-desktop{
+            width: 80%;
+        }
     }
     .top, .bottom{
         margin: 1% 0;
         .displayFlex(center, flex-start);
         justify-content: space-between;
+        @media @tablet{
+            flex-direction: column;
+            margin: 0;
+        }
     }
     .container{
         border: 4px solid #FFFFFF;
@@ -20,15 +30,25 @@ section{
         height: 400px;
         p{
             .bodyText(1.2rem, 1.8rem, @body-font, 5%);
+            @media @tablet{
+                .bodyText(1.2rem, 1.8rem, @body-font, 2%);
+            }
         }
         h4{
             .bodyText(1.5rem, none, @header-font, 10%);
+            @media @tablet{
+                .bodyText(1.5rem, none, @header-font, 5%);
+            }
         }
         img{
             width: 30%;
         }
         &:hover{
             transform: scale(1.05);
+        }
+        @media @tablet{
+            width: 100%;
+            margin: 1%;
         }
     }
     .bottom-button{
