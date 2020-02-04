@@ -1,0 +1,45 @@
+.team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .two-profile{
+        display: flex;
+        width: 65%;
+        justify-content: space-between;
+    }
+    .profile-container{
+        margin: 30px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid black;
+        border-radius: 20px;
+        background-color: @plush-pink;
+        img{
+            border-radius: 50%;
+            width: 50%;
+        }
+        h3{
+            .bodyText(1.5rem, none, @header-font, 10%);
+        }
+        h6{
+            color: @white;
+            font-family: @body-font;
+            margin: 20px 0;
+            font-size: 1.4rem;
+        }
+        a{
+            padding: 0;
+            margin-bottom: 40px;
+            text-decoration: none;
+            color: @white;
+            font-family: @body-font;
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+        }
+    }
+}

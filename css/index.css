@@ -483,61 +483,6 @@ footer .footer-container .social-media i {
     width: 80%;
   }
 }
-.profile {
-  width: 50%;
-  border-radius: 50%;
-}
-.profile:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-}
-.aboutContainer {
-  border: 4px solid #FFFFFF;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 48%;
-  height: 450px;
-}
-@media (max-width: 500px) {
-  .aboutContainer {
-    width: 60%;
-    margin-left: 20%;
-  }
-}
-.aboutTop,
-.aboutBottom,
-.aboutMiddle {
-  margin: 1% 0;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-@media (max-width: 500px) {
-  .aboutTop,
-  .aboutBottom,
-  .aboutMiddle {
-    flex-direction: column;
-  }
-}
-p {
-  color: #FFFFFF;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  text-align: center;
-  font-family: 'Muli', sans-serif;
-  padding: 5%;
-}
-h3 {
-  color: #FFFFFF;
-  font-size: 1.5rem;
-  line-height: none;
-  text-align: center;
-  font-family: 'Abril Fatface', cursive;
-  padding: 10%;
-}
 .form-container {
   display: flex;
   justify-content: center;
@@ -598,4 +543,54 @@ h3 {
   .form-container form {
     width: 90%;
   }
+}
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.team .two-profile {
+  display: flex;
+  width: 65%;
+  justify-content: space-between;
+}
+.team .profile-container {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #EF019F;
+}
+.team .profile-container img {
+  border-radius: 50%;
+  width: 50%;
+}
+.team .profile-container h3 {
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  line-height: none;
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;
+  padding: 10%;
+}
+.team .profile-container h6 {
+  color: #FFFFFF;
+  font-family: 'Muli', sans-serif;
+  margin: 20px 0;
+  font-size: 1.4rem;
+}
+.team .profile-container a {
+  padding: 0;
+  margin-bottom: 40px;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: 'Muli', sans-serif;
+}
+.team .profile-container a:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
