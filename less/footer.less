@@ -1,0 +1,33 @@
+footer{
+    .displayFlex(center, flex-start);
+    background-color: @cool-blue;
+    padding: 50px 0;
+    .footer-container{
+        .displayFlex(center, center);
+        justify-content: space-between;
+        width: 50%;
+        .copy{
+            color: @white;
+            .displayFlex(center, center);
+            p{
+                padding: 0;
+            }
+            i{
+                margin-right: 5px;
+            }
+        }
+        .social-media{
+            i{
+                color: @plush-pink;
+                font-size: 1.6rem;
+                margin: 0 10px;
+            }
+        }
+        @media @tablet{
+            width: 65%;
+        }
+        @media @phone{
+            width: 80%;
+        }
+    }
+}
