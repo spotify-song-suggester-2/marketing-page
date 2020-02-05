@@ -10,15 +10,12 @@
         padding: 20px;
         border-radius: 20px;
         h3{
-            font-family: @header-font;
-            font-size: 1.8rem;
             margin-bottom: 20px;
+            .headerText(@header-font, black, 1.8rem);
         }
         p{
-            font-family: @body-font;
-            text-align: center;
-            font-size: 1.5rem;
-            line-height: 30px;
+            .bodyText(1.2rem, 30px, @body-font, 0);
+            color: black;
         }
     }
 }
@@ -30,17 +27,13 @@
     .text-container{
         .displayFlex(center, center);
         flex-direction: column;
-        color: white;
+        color: @white;
         padding: 5%;
         p{
-            text-align: center;
-            font-family: @body-font;
-            font-size: 1.5rem;
-            line-height: 40px;
+            .bodyText(1.2rem, 40px, @body-font, 0);
         }
         h3{
-            font-family: @header-font;
-            font-size: 1.8rem;
+            .headerText(@header-font, @white, 1.8rem);
             margin-bottom: 20px;
             letter-spacing: 2px;
             text-align: center;

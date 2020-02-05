@@ -152,7 +152,7 @@ header .title {
   padding-top: 50px;
 }
 header .title h1 {
-  font-family: cortado, sans-serif;
+  font-family: 'Abril Fatface', cursive;
   color: #EF019F;
   font-size: 7.2rem;
   font-style: normal;
@@ -353,7 +353,7 @@ nav .links a:hover {
   margin: 10px 0;
 }
 .mobile a i {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 }
 .mobile a:hover {
   transform: none !important;
@@ -503,15 +503,19 @@ nav .links a:hover {
   border-radius: 20px;
 }
 .how-it-works .container h3 {
-  font-family: 'Abril Fatface', cursive;
-  font-size: 1.8rem;
   margin-bottom: 20px;
+  font-family: 'Abril Fatface', cursive;
+  color: black;
+  font-size: 1.8rem;
 }
 .how-it-works .container p {
-  font-family: 'Muli', sans-serif;
-  text-align: center;
-  font-size: 1.5rem;
+  color: #FFFFFF;
+  font-size: 1.2rem;
   line-height: 30px;
+  text-align: center;
+  font-family: 'Muli', sans-serif;
+  padding: 0;
+  color: black;
 }
 .about-section {
   background-color: #171330;
@@ -525,17 +529,20 @@ nav .links a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: white;
+  color: #FFFFFF;
   padding: 5%;
 }
 .about-section .text-container p {
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  line-height: 40px;
   text-align: center;
   font-family: 'Muli', sans-serif;
-  font-size: 1.5rem;
-  line-height: 40px;
+  padding: 0;
 }
 .about-section .text-container h3 {
   font-family: 'Abril Fatface', cursive;
+  color: #FFFFFF;
   font-size: 1.8rem;
   margin-bottom: 20px;
   letter-spacing: 2px;
@@ -640,15 +647,19 @@ nav .links a:hover {
   width: 60%;
 }
 .mission-statement .text-container h2 {
-  font-size: 1.4rem;
   font-family: 'Abril Fatface', cursive;
+  color: black;
+  font-size: 1.4rem;
   margin-bottom: 20px;
 }
 .mission-statement .text-container p {
+  color: #FFFFFF;
   font-size: 1.2rem;
-  font-family: 'Muli', sans-serif;
-  text-align: center;
   line-height: 30px;
+  text-align: center;
+  font-family: 'Muli', sans-serif;
+  padding: 0;
+  color: black;
 }
 .team {
   display: flex;
