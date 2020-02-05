@@ -19,6 +19,7 @@
             font-size: 1.2rem;
             font-family: @body-font;
             text-align: center;
+            line-height: 30px;
         }
     }
 }
@@ -29,23 +30,41 @@
     padding-top: 30px;
     background-color: @cool-blue;
     .one-profile{
+        width: 25%;
+        @media @lg-desktop{
+            width: 30%;
+        }
         @media @md-desktop{
             width: 40%;
         }
+        @media @tablet{
+            width: 55%;
+        } 
+        @media @phone{
+            width: 60%;
+        }
     }
     .two-profile{
-        display: flex;
-        width: 90%;
+        .displayFlex(center, center);
         justify-content: space-between;
+        width: 60%;
+        @media @lg-desktop{
+            width: 60%;
+        }
         @media @md-desktop{
-            width: 90%;
+            width: 70%;
+        }
+        @media @tablet{
+            flex-direction: column;
+            width: 80%;
         }
         .profile-container{
-            @media @md-desktop{
-                width: 40%;
-            }
+            width: 45%;
             @media @tablet{
-                width: 45%;
+                width: 70%;
+            }
+            @media @phone{
+                width: 75%;
             }
         }
     }
@@ -78,5 +97,7 @@
                 transform: scale(1.1);
             }
         }
+        
     }
+
 }
