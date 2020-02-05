@@ -2,97 +2,123 @@
 <html lang ="en">
 
     <head>
-        <title>About Us</title>
-        <link rel="stylesheet" href="css/index.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://kit.fontawesome.com/038614a99f.js" crossorigin="anonymous"></script>
-        <script src="js/index.js"></script>
-      </head>
+      <title>About Us</title>
+      <link rel="stylesheet" href="css/index.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="https://kit.fontawesome.com/038614a99f.js" crossorigin="anonymous"></script>
+      <script src="js/index.js"></script>
+    </head>
 
 <body>
-  <!-- <header>
-    <div class="title">
-      <h1>About Us</h1>
-    </div>
-    <div class="slogan">
-      <h2>Dance</h2>
-      <h2>To Your Own</h2>
-      <h2>Beat</h2>
-    </div>
-    <div class="lower">
-      <h3>Discover New Music</h3>
-    </div>
-  </header> -->
   
-  <nav>
-    <div class="links">
-        <a href="index.html">Home</a>
-        <a href="#">Sign Up</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="ourTeam.html">Our Team</a>
-    </div> 
+<nav>
+  <div class="links">
+      <a href="index.html">Home</a>
+      <a href="https://www.symphinity.now.sh/signup">Sign Up</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="ourTeam.html">Our Team</a>
+  </div> 
 </nav>
 
 <!-- Mobile Nav -->
 <nav class="mobile">
-    <a href="javascript:void(0);" class="hamburger" onclick="navMenu()">
-        <i class="fas fa-bars" id="icon"></i>
-    </a>
-    <div class="links">
-        <a href="index.html">Home</a>
-        <a href="#">Sign Up</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="ourTeam.html">Our Team</a>
-    </div> 
+  <a href="javascript:void(0);" class="hamburger" onclick="navMenu()">
+      <i class="fas fa-bars" id="icon"></i>
+  </a>
+  <div class="links">
+      <a href="index.html">Home</a>
+      <a href="https://www.symphinity.now.sh/signup">Sign Up</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="ourTeam.html">Our Team</a>
+  </div> 
 </nav>
 
-<section id="aboutUs">
-  <div class ="aboutTop">
-    <div class = "aboutContainer">
+<section class="mission-statement">
+  <div class="text-container">
+    <h2>Mission Statement</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus sapiente, quam corrupti laudantium sit fugiat dignissimos iusto illo accusantium perspiciatis eos, facilis itaque, reprehenderit aperiam exercitationem minus alias aliquid dolore?</p>
+  </div>
+</section>
+
+<section class="team">
+  <!-- Project Manager -->
+  <div class="one-profile">
+    <div class="profile-container">
       <h3>Project Lead</h3> 
       <img src="img/izzy.jpg" class="profile"> 
-      <p>Izzy</p>
-    </div>
-
-    <div class = "aboutContainer">
-      <h3>UI</h3> 
-      <img src="img/josiahUI.png" class="profile"> 
-      <p>Josiah Roa</p>
-      <img src="img/riverUI.png" class="profile"> 
-      <p>River Padgett</p>
+      <h6>Izzy</h6>
+      <a href="https://github.com/israelgonzalezb" target="_blank">@israelgonzalezb</a>
     </div>
   </div>
-
-  <div class ="aboutMiddle">
-    <div class = "aboutContainer">
-    <h3>React II</h3> <img src="img/alexReact2.jpg" class="profile"> <p>Alex Sierra</p>
-    <img src="img/danielReact2.jpg" class="profile"> 
-    <p>Daniel Detes</p>
-    </div>
-    <div class = "aboutContainer">
-      <h3>Backend</h3>
-      <img src="img/dijahBackend.png" class="profile">
-      <p>Khadijatu Deen Karim</p>
-    </div>
-  </div>
-
-  <div class ="aboutBottom">
-    <div class = "aboutContainer">
-      <h3>Machine Learning</h3>
+  <!-- Machine Learning Engineers -->
+  <div class="two-profile">
+    <div class="profile-container">
+      <h3>Machine Learning Engineer</h3>
       <img src="img/jimmyMachine.png" class="profile"> 
-      <p>Jimmy Smith</p>
-      <img src="img/ryanMachine.png" class="profile"> 
-      <p>Ryan Zernach</p>
+      <h6>Jimmy Smith</h6>
+      <a href="https://github.com/Zebfred" target="_blank">@Zebfred</a>
     </div>
-
-    <div class = "aboutContainer">
-      <h3>Data Engineer</h3>
+    <div class="profile-container">
+      <h3>Machine Learning Engineer</h3>
+      <img src="img/ryanMachine.png" class="profile"> 
+      <h6>Ryan Zernach</h6>
+      <a href="https://github.com/Zernach" target="_blank">@Zernach</a>
+    </div>
+  </div>
+  <!-- Data Science Engineers -->
+  <div class="two-profile">
+    <div class="profile-container">
+      <h3>Data Science Engineer</h3>
       <img src="img/georgeData.jpg" class="profile">
-      <p>Jorge Lima</p>
+      <h6>Jorge Lima</h6>
+      <!-- <a href="#" target="_blank">none</a> -->
+    </div>
+    <div class="profile-container">
+      <h3>Data Science Engineer</h3>
       <img src="img/mehidData.jpg" class="profile">
-      <p>Mehid Khiati</p>
+      <h6>Mehid Khiati</h6>
+      <a href="https://github.com/MehdiKhiatiDS" target="_blank">@MehdiKhiatiDS</a>
+    </div>
+  </div>
+  <!-- Front End Developers -->
+  <div class="two-profile">
+    <div class="profile-container">
+      <h3>Front End Developer</h3>
+      <img src="img/alexReact2.jpg" class="profile"> 
+      <h6>Alex Sierra</h6>
+      <a href="https://github.com/alexandercsierra" target="_blank">@alexandercsierra</a>
+    </div>
+    <div class="profile-container">
+      <h3>Front End Developer</h3>
+      <img src="img/danielReact2.jpg" class="profile"> 
+      <h6>Daniel Detes</h6>
+      <a href="https://github.com/jDanielDetes" target="_blank">@jDanielDetes</a>
+    </div>
+  </div>
+  <!-- Web UI Developers -->
+  <div class="two-profile">
+    <div class="profile-container">
+      <h3>Web UI Developer</h3>
+      <img src="img/josiahUI.png" class="profile"> 
+      <h6>Josiah Roa</h6>
+      <a href="https://github.com/josiahroa18" target="_blank">@josiahroa18</a>
+    </div>
+    <div class="profile-container">
+      <h3>Web UI Developer</h3>
+      <img src="img/riverUI.png" class="profile"> 
+      <h6>River Padgett</h6>
+      <a href="https://github.com/padgettriver" target="_blank">@padgettriver</a>
+    </div>
+  </div>
+  <!-- Backend -->
+  <div class="one-profile">
+    <div class="profile-container">
+      <h3>Backend Developer</h3>
+      <img src="img/dijahBackend.png" class="profile">
+      <h6>Khadijatu Deen Karim</h6>
+      <a href="https://github.com/dijahdeen" target="_blank">@dijahdeen</a>
     </div>
   </div>
 </section>
