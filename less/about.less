@@ -1,3 +1,28 @@
+.how-it-works{
+    .displayFlex(center, center);
+    background-color: @cool-blue;
+    padding-top: 80px;
+    .container{
+        width: 70%;
+        .displayFlex(center, center);
+        flex-direction: column;
+        background-color: @white;
+        padding: 20px;
+        border-radius: 20px;
+        h3{
+            font-family: @header-font;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+        p{
+            font-family: @body-font;
+            text-align: center;
+            font-size: 1.5rem;
+            line-height: 30px;
+        }
+    }
+}
+
 .about-section{
     background-color: @cool-blue;
     .displayFlex(center, center);
@@ -33,6 +58,6 @@
 }
 
 .filler{
-    height: 30vh;
+    height: 10vh;
     background-color: @cool-blue;
 }

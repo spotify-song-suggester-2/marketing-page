@@ -483,6 +483,34 @@ nav .links a:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
+.how-it-works {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #171330;
+  padding-top: 80px;
+}
+.how-it-works .container {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  padding: 20px;
+  border-radius: 20px;
+}
+.how-it-works .container h3 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+.how-it-works .container p {
+  font-family: 'Muli', sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 30px;
+}
 .about-section {
   background-color: #171330;
   display: flex;
@@ -527,7 +555,7 @@ nav .links a:hover {
   }
 }
 .filler {
-  height: 30vh;
+  height: 10vh;
   background-color: #171330;
 }
 .form-container {
