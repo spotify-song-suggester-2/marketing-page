@@ -252,6 +252,47 @@ header .button-container button:hover {
     align-items: center;
   }
 }
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #171330;
+  padding: 50px 0;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+footer .footer-container .copy {
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-container .copy p {
+  padding: 0;
+}
+footer .footer-container .copy i {
+  margin-right: 5px;
+}
+footer .footer-container .social-media i {
+  color: #EF019F;
+  font-size: 1.6rem;
+  margin: 0 10px;
+}
+@media (max-width: 800px) {
+  footer .footer-container {
+    width: 65%;
+  }
+}
+@media (max-width: 500px) {
+  footer .footer-container {
+    width: 80%;
+  }
+}
 nav {
   display: flex;
   justify-content: center;
@@ -315,14 +356,14 @@ nav .links a:hover {
 .mobile a:hover {
   transform: none !important;
 }
-section {
+.landing {
   padding: 80px 0;
   background-color: #171330;
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
-section .body-container {
+.landing .body-container {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -330,17 +371,17 @@ section .body-container {
   width: 60%;
 }
 @media (max-width: 1200px) {
-  section .body-container {
+  .landing .body-container {
     width: 70%;
   }
 }
 @media (max-width: 1000px) {
-  section .body-container {
+  .landing .body-container {
     width: 80%;
   }
 }
-section .top,
-section .bottom {
+.landing .top,
+.landing .bottom {
   margin: 1% 0;
   display: flex;
   justify-content: center;
@@ -348,13 +389,13 @@ section .bottom {
   justify-content: space-between;
 }
 @media (max-width: 800px) {
-  section .top,
-  section .bottom {
+  .landing .top,
+  .landing .bottom {
     flex-direction: column;
     margin: 0;
   }
 }
-section .container {
+.landing .container {
   border: 4px solid #FFFFFF;
   display: flex;
   justify-content: center;
@@ -363,7 +404,7 @@ section .container {
   width: 48%;
   height: 400px;
 }
-section .container p {
+.landing .container p {
   color: #FFFFFF;
   font-size: 1.2rem;
   line-height: 1.8rem;
@@ -372,7 +413,7 @@ section .container p {
   padding: 5%;
 }
 @media (max-width: 800px) {
-  section .container p {
+  .landing .container p {
     color: #FFFFFF;
     font-size: 1.2rem;
     line-height: 1.8rem;
@@ -381,7 +422,7 @@ section .container p {
     padding: 2%;
   }
 }
-section .container h4 {
+.landing .container h4 {
   color: #FFFFFF;
   font-size: 1.5rem;
   line-height: none;
@@ -390,7 +431,7 @@ section .container h4 {
   padding: 10%;
 }
 @media (max-width: 800px) {
-  section .container h4 {
+  .landing .container h4 {
     color: #FFFFFF;
     font-size: 1.5rem;
     line-height: none;
@@ -399,19 +440,19 @@ section .container h4 {
     padding: 5%;
   }
 }
-section .container img {
+.landing .container img {
   width: 30%;
 }
-section .container:hover {
+.landing .container:hover {
   transform: scale(1.05);
 }
 @media (max-width: 800px) {
-  section .container {
+  .landing .container {
     width: 100%;
     margin: 1%;
   }
 }
-section .bottom-button {
+.landing .bottom-button {
   margin: 50px 0;
   width: 100%;
   display: flex;
@@ -419,7 +460,7 @@ section .bottom-button {
   align-items: center;
   background-color: #171330;
 }
-section .bottom-button button {
+.landing .bottom-button button {
   background: #ef019f;
   background: linear-gradient(90deg, rgba(239, 1, 159, 0.5) 0%, rgba(253, 29, 222, 0.5) 100%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -438,50 +479,16 @@ section .bottom-button button {
   letter-spacing: 3.6px;
   text-transform: uppercase;
 }
-section .bottom-button button:hover {
+.landing .bottom-button button:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+.about-section {
+  height: 80vh;
   background-color: #171330;
-  padding: 50px 0;
-}
-footer .footer-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  width: 50%;
-}
-footer .footer-container .copy {
-  color: #FFFFFF;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-footer .footer-container .copy p {
-  padding: 0;
-}
-footer .footer-container .copy i {
-  margin-right: 5px;
-}
-footer .footer-container .social-media i {
-  color: #EF019F;
-  font-size: 1.6rem;
-  margin: 0 10px;
-}
-@media (max-width: 800px) {
-  footer .footer-container {
-    width: 65%;
-  }
-}
-@media (max-width: 500px) {
-  footer .footer-container {
-    width: 80%;
-  }
 }
 .form-container {
   display: flex;
@@ -544,16 +551,66 @@ footer .footer-container .social-media i {
     width: 90%;
   }
 }
-.team {
+.mission-statement {
+  background-color: #171330;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 0;
+  padding-top: 50px;
+}
+.mission-statement .text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  padding: 2%;
+  border-radius: 10px;
+  width: 60%;
+}
+.mission-statement .text-container h2 {
+  font-size: 1.4rem;
+  font-family: 'Abril Fatface', cursive;
+  margin-bottom: 20px;
+}
+.mission-statement .text-container p {
+  font-size: 1.2rem;
+  font-family: 'Muli', sans-serif;
+  text-align: center;
+}
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30px;
+  background-color: #171330;
+}
+@media (max-width: 1200px) {
+  .team .one-profile {
+    width: 40%;
+  }
 }
 .team .two-profile {
   display: flex;
-  width: 65%;
+  width: 90%;
   justify-content: space-between;
+}
+@media (max-width: 1200px) {
+  .team .two-profile {
+    width: 90%;
+  }
+}
+@media (max-width: 1200px) {
+  .team .two-profile .profile-container {
+    width: 40%;
+  }
+}
+@media (max-width: 800px) {
+  .team .two-profile .profile-container {
+    width: 45%;
+  }
 }
 .team .profile-container {
   margin: 30px 0;
@@ -584,11 +641,14 @@ footer .footer-container .social-media i {
   font-size: 1.4rem;
 }
 .team .profile-container a {
-  padding: 0;
   margin-bottom: 40px;
   text-decoration: none;
   color: #FFFFFF;
+  font-size: 1rem;
+  line-height: none;
+  text-align: center;
   font-family: 'Muli', sans-serif;
+  padding: 0;
 }
 .team .profile-container a:hover {
   cursor: pointer;
