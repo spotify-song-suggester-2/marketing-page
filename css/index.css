@@ -285,6 +285,9 @@ footer .footer-container .social-media i {
   font-size: 1.6rem;
   margin: 0 10px;
 }
+footer .footer-container .social-media a:-webkit-any-link {
+  text-decoration: none !important;
+}
 @media (max-width: 800px) {
   footer .footer-container {
     width: 65%;
